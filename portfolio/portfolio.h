@@ -8,7 +8,11 @@
 
 #ifndef portfolio_h
 #define portfolio_h
+#include <math.h>
 #include <stdio.h>
 int jumpers(char *message);
-
+int pythagorean(void);
+int rectangle (char *message);
+int historama (char *message);
+int prettypatterns (char *message);
 #endif /* portfolio_h */

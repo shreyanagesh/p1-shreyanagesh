@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CFBD10D23464C6A0061CC8C /* prettypatterns.c in Sources */ = {isa = PBXBuildFile; fileRef = 0CFBD10823464C6A0061CC8C /* prettypatterns.c */; };
+		0CFBD10E23464C6A0061CC8C /* jumpers.c in Sources */ = {isa = PBXBuildFile; fileRef = 0CFBD10923464C6A0061CC8C /* jumpers.c */; };
+		0CFBD10F23464C6A0061CC8C /* historama.c in Sources */ = {isa = PBXBuildFile; fileRef = 0CFBD10A23464C6A0061CC8C /* historama.c */; };
+		0CFBD11023464C6A0061CC8C /* rectangle.c in Sources */ = {isa = PBXBuildFile; fileRef = 0CFBD10B23464C6A0061CC8C /* rectangle.c */; };
+		0CFBD11123464C6A0061CC8C /* pythagorean.c in Sources */ = {isa = PBXBuildFile; fileRef = 0CFBD10C23464C6A0061CC8C /* pythagorean.c */; };
 		6DFF6CF02336675E00761211 /* mathQuestions.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF6CEF2336675E00761211 /* mathQuestions.c */; };
 		6DFF6CF3233667CB00761211 /* askQuestion.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF6CF2233667CB00761211 /* askQuestion.c */; };
-		6DFF6CF52336A42700761211 /* jumpers.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF6CF42336A42700761211 /* jumpers.c */; };
 		6DFF6CFA2336D16300761211 /* logicQuestions.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF6CF92336D16300761211 /* logicQuestions.c */; };
 		6DFF6CFC2337015500761211 /* questionDriver.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF6CFB2337015500761211 /* questionDriver.c */; };
 		CDF62A212329A47D00B0ECD9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CDF62A202329A47D00B0ECD9 /* main.c */; };
@@ -28,11 +32,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0CFBD10823464C6A0061CC8C /* prettypatterns.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prettypatterns.c; sourceTree = "<group>"; };
+		0CFBD10923464C6A0061CC8C /* jumpers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = jumpers.c; path = "../../../p1-starter/portfolio/jumpers.c"; sourceTree = "<group>"; };
+		0CFBD10A23464C6A0061CC8C /* historama.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = historama.c; sourceTree = "<group>"; };
+		0CFBD10B23464C6A0061CC8C /* rectangle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rectangle.c; sourceTree = "<group>"; };
+		0CFBD10C23464C6A0061CC8C /* pythagorean.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pythagorean.c; sourceTree = "<group>"; };
+		0CFBD11223464D020061CC8C /* portfolio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = portfolio.h; sourceTree = "<group>"; };
 		6DFF6CEF2336675E00761211 /* mathQuestions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mathQuestions.c; sourceTree = "<group>"; };
 		6DFF6CF1233667CB00761211 /* askQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = askQuestion.h; sourceTree = "<group>"; };
 		6DFF6CF2233667CB00761211 /* askQuestion.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = askQuestion.c; sourceTree = "<group>"; };
-		6DFF6CF42336A42700761211 /* jumpers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jumpers.c; sourceTree = "<group>"; };
-		6DFF6CF72336A57900761211 /* portfolio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = portfolio.h; sourceTree = "<group>"; };
 		6DFF6CF82336D0B300761211 /* questions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = questions.h; sourceTree = "<group>"; };
 		6DFF6CF92336D16300761211 /* logicQuestions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = logicQuestions.c; sourceTree = "<group>"; };
 		6DFF6CFB2337015500761211 /* questionDriver.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = questionDriver.c; sourceTree = "<group>"; };
@@ -54,8 +62,12 @@
 		6DFF6CF62336A45400761211 /* portfolio */ = {
 			isa = PBXGroup;
 			children = (
-				6DFF6CF72336A57900761211 /* portfolio.h */,
-				6DFF6CF42336A42700761211 /* jumpers.c */,
+				0CFBD11223464D020061CC8C /* portfolio.h */,
+				0CFBD10A23464C6A0061CC8C /* historama.c */,
+				0CFBD10923464C6A0061CC8C /* jumpers.c */,
+				0CFBD10823464C6A0061CC8C /* prettypatterns.c */,
+				0CFBD10C23464C6A0061CC8C /* pythagorean.c */,
+				0CFBD10B23464C6A0061CC8C /* rectangle.c */,
 			);
 			path = portfolio;
 			sourceTree = "<group>";
@@ -147,12 +159,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CFBD11123464C6A0061CC8C /* pythagorean.c in Sources */,
+				0CFBD10F23464C6A0061CC8C /* historama.c in Sources */,
+				0CFBD10E23464C6A0061CC8C /* jumpers.c in Sources */,
 				CDF62A212329A47D00B0ECD9 /* main.c in Sources */,
 				6DFF6CF3233667CB00761211 /* askQuestion.c in Sources */,
-				6DFF6CF52336A42700761211 /* jumpers.c in Sources */,
 				6DFF6CFA2336D16300761211 /* logicQuestions.c in Sources */,
 				6DFF6CF02336675E00761211 /* mathQuestions.c in Sources */,
 				6DFF6CFC2337015500761211 /* questionDriver.c in Sources */,
+				0CFBD10D23464C6A0061CC8C /* prettypatterns.c in Sources */,
+				0CFBD11023464C6A0061CC8C /* rectangle.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

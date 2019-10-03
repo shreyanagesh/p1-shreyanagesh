@@ -36,10 +36,11 @@ int main(int argc, const char * argv[]) {
         printf("|  7. Array Code                       | \n");
         printf("|  8. Pretty Patterns                  | \n");
         printf("|  9. Test Questions                   | %s\n", (menuRun[9] ? runMsg2D[9] : notRun) );
+        printf("| 10. Historama                        | \n");
         printf("| 99. Exit                             | \n");
         printf("| Select number you would like to run: |\n");
         printf("----------------------------------------\n");
-
+        
         
         for ( int input = 0; !input; ) { //switch control loop
             
@@ -59,12 +60,14 @@ int main(int argc, const char * argv[]) {
                     // Not implemented
                     // setup to strcpy updating runMsg2D[]
                     strcpy(runMsg2D[input], "pythagorean pressed");
+                    menuRun[input] = pythagorean();
                     menuRun[input] = 1;
                     break;
                 case 3:
                     //datatypes();
                     break;
                 case 4:
+                    menuRun[input] = rectangle(runMsg2D[input]);
                     //rectanglelab();
                     break;
                 case 5:
@@ -77,6 +80,7 @@ int main(int argc, const char * argv[]) {
                     //arraycode();
                     break;
                 case 8:
+                    menuRun[input] = prettypatterns(runMsg2D[input]);
                     //prettypatterns();
                     break;
                 case 9:
@@ -85,6 +89,9 @@ int main(int argc, const char * argv[]) {
                     // returns: >=0 questions run, <0 if failure
                     menuRun[input] = questionDriver(runMsg2D[input]);
                     break;
+                case 10:
+                    menuRun[input] = historama(runMsg2D[input]);
+                    //historama();
                 case 99:
                     exitflag = 1;
                     break;
@@ -97,12 +104,10 @@ int main(int argc, const char * argv[]) {
             if (!exitflag && menuRun[input]) {
                 menuRun[0]++;
             }//updates "Run Status"
-        
+            
         }//end of switch control loop
         
     }//end menu control loop
     
     return 0;
 }
-
-
